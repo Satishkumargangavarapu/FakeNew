@@ -7,12 +7,11 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Dependencies
-node_modules/
+git rm -r --cached node_modules dist
+git add node_modules dist
+git commit -m "Add node_modules and dist to repo"
+git push
 
-# Build output
-dist/
-dist-ssr/
 
 # Local environment files
 *.local
